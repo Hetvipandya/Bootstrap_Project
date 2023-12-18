@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>Bootstrap</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Travelling</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destination">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#offers">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booknow">Book now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slide1.jpg" class="d-block w-100 img-width" alt="slide1">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="slide"><b>MAKE YOUR TOUR AMAZING WITH US</b></h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slide2.jpg" class="d-block w-100 img-width" alt="slide2">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="slide"><b>MAKE YOUR TOUR AMAZING WITH US</b></h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="slide3.jpg" class="d-block w-100 img-width" alt="slide3">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="slide"><b>MAKE YOUR TOUR AMAZING WITH US</b></h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ 
+      <div class="container form" id="booknow">
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Destination</label>
+             </div>
+            <div class="mb-3">
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search">
+            </div>
+        </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Check-in-date</label>
+             </div>
+            <div class="mb-3">
+              <input type="date" placeholder="Check-in-date">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Check-out-date</label>
+             </div>
+            <div class="mb-3">
+              <input type="date" placeholder="Check-out-date">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Price limit</label>
+             </div>
+            <div class="mb-3">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>$5,000</option>
+                <option value="1">$6,000</option>
+                <option value="2">$7,000</option>
+                <option value="3">$8,000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="mb-3 btn">
+              <button type="button" class="btn btn-warning">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="container" id="aboutus">
+        <h1 style="text-align: center; margin-top: 100px;">About Us</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="about img.jpg" class="abimg">
+          </div> 
+          <div class="col-md-6">
+            <p class="para">
+             <b>Make your tour memorable and safe with us</b><br>
+             Far far away, behind the word mountains, far from the countries Vokalia 
+             and Consonantia, there live the blind texts. Separated they live in
+             Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+
+   
+               
+     <div class="container" id="destination">
+      <h1 style="text-align: center; margin-top: 90px;">Tour Destination</h1>
+      <div class="row">
+        <div class="col-md-4">
+       <div class="card" style="width: 18rem;">
+        <img src="card1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p>8 days tour</p>
+          <h3 class="card-title">Indonesia</h3>
+          <p class="card-text"><i class="fa-solid fa-location-dot"></i>&nbsp Indonesia</p>
+          <br>
+          <p><i class="fa-solid fa-bath"></i> &nbsp2 &nbsp &nbsp<i class="fa-solid fa-bed"></i> &nbsp3 &nbsp &nbsp
+            <i class="fa-solid fa-mountain-sun"></i> &nbspNear Mountain</p>
+          <a href="#" class="btn btn-info">Read more</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="card2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p>8 days tour</p>
+          <h3 class="card-title">Australia</h3>
+          <p class="card-text"><i class="fa-solid fa-location-dot"></i>&nbsp Australia</p>
+          <br>
+          <p><i class="fa-solid fa-bath"></i> &nbsp2 &nbsp &nbsp<i class="fa-solid fa-bed"></i> &nbsp3 &nbsp &nbsp
+            <i class="fa-solid fa-umbrella-beach"></i> &nbspNear Beach</p>
+          <a href="#" class="btn btn-warning">Read more</a>
+        </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>8 days tour</p>
+            <h3 class="card-title">Singapore</h3>
+            <p class="card-text"><i class="fa-solid fa-location-dot"></i>&nbsp Singapore</p>
+            <br>
+            <p><i class="fa-solid fa-bath"></i> &nbsp2 &nbsp &nbsp<i class="fa-solid fa-bed"></i> &nbsp3 &nbsp &nbsp
+              <i class="fa-solid fa-umbrella-beach"></i> &nbspNear Beach</p>
+            <a href="#" class="btn btn-danger">Read more</a>
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+    <h1 style="text-align: center; margin-top: 100px;">Offers</h1>
+    <div class="container-fluid tabbackground" id="offers">
+      <div class="tablayout">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="holidays-tab" data-bs-toggle="tab" data-bs-target="#holidays" type="button" role="tab" aria-controls="holidays" aria-selected="true">Holidays</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="allOffers-tab" data-bs-toggle="tab" data-bs-target="#alloffers" type="button" role="tab" aria-controls="alloffers" aria-selected="false">All Offers</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels" type="button" role="tab" aria-controls="hotels" aria-selected="false">Hotels</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="holidays" role="tabpanel" aria-labelledby="holidays-tab">
+        
+        <div class="container" id="page1">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3 package1" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="package1.jpg" class="img-fluid rounded-start" alt="package1.jpg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Presenting Long Weekend: Summer Holiday</h5>
+                      <p class="card-text">Grab FLAT 30% OFF on Holiday Packages.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 package2" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="package2.jpg" class ="img-fluid rounded-start" alt="package2.jpg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Introducing Holiday Packages with Villas:</h5>
+                      <p class="card-text">Explore unique stays options like villas.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3 package3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="package3.jpg" class="img-fluid rounded-start" alt="package3.jpg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">For a Peaceful,Spiritual Break:</h5>
+                      <p class="card-text">Grab up to 30% Off on our Regional Place</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 package4" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="package4.jpg" class="img-fluid rounded-start" alt="package4.jpg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">For a Thrilling Escape Wild:</h5>
+                      <p class="card-text">30% OFF on our wild packages.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+       </div>
+
+      <div class="tab-pane fade" id="alloffers" role="tabpanel" aria-labelledby="alloffers-tab">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="offer1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Bookings are open now!</h5>
+                      <p class="card-text">With our great escape hotel sale for your JOYFUL year-end Holiday.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="offer2.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Presenting long weekend : Winter Camp</h5>
+                      <p class="card-text">Upto 30% OFF on Holiday Winter Camp.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="offer3.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Up to 30% OFF on International Tour</h5>
+                      <p class="card-text">With our great escape hotel sale for your JOYFUL year-end Holiday.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+      
+      <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="hotel1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lemon Tree offers bring up to 50% OFF</h5>
+                      <p class="card-text">Grab up to 50% Off on your stay.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="hotel2.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Save Big with Sarovar Hotels & Resort.</h5>
+                      <p class="card-text">Grab up to 40% OFF on your stay.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="hotel3.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Presenting Long Weekend Homestay Mania:</h5>
+                      <p class="card-text">Grab upto 30% OFF on homestays for wow stays this long weekend.</p>
+                      <p class="card-text"><button type="button" class="btn btn-link">Book Now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              
+            </div>
+          </div>
+        </div>
+         
+      </div>    
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container" id="contact">
+        <div class="row">
+          <div class="col">
+            <b>Vacation</b><br><br>
+            <p>Far far away, behind the<br> word 
+              mountains, far<br> from the countries<br> Vokalia and <br>Consonantia, there 
+              live <br>the blind texts.</p>
+              <i class="fa-brands fa-facebook fa-lg"></i> &nbsp &nbsp
+              <i class="fa-brands fa-instagram fa-lg"></i> &nbsp &nbsp
+              <i class="fa-brands fa-twitter fa-lg"></i>
+          </div>
+          <div class="col">
+            <b>Information</b><br><br>
+            <p>Online Enquiry<br>
+               General Enquiries<br>
+               Booking Conditions<br>
+               Privacy and Policy<br>
+               Refund Policy<br>
+               Call us
+            </p>
+          </div>
+          <div class="col">
+            <b>Experience</b><br><br>
+            <p>Adventure<br>
+               Hotel and Restaurant<br>
+               Beach<br>
+               Nature<br>
+               Camping<br>
+               Party
+            </p>
+          </div>
+          <div class="col">
+            <b>Have a Questions?</b><br><br>
+            <p><i class="fa-solid fa-location-dot"></i> &nbsp; 203 Fake St. Mountain <br>&nbsp &nbsp &nbsp View,  San Francisco,<br> 
+             &nbsp &nbsp &nbsp California,USA</p>
+            <p><i class="fa-solid fa-phone"></i> &nbsp; +2392 3929 210</p>
+            <p><i class="fa-solid fa-envelope"></i> &nbsp; info@yourdomain.com</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

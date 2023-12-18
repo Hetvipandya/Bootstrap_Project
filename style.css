@@ -1,0 +1,75 @@
+.img-width{
+    height: 600px;
+}
+
+.abimg{
+    margin-top: 55px;
+    width: 600px;
+    margin-left: -100px;
+    border-radius: 50%;
+}
+
+.slide{
+    margin-bottom: 300px;
+    font-style: italic;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-right: -200px;
+}
+
+.para{
+    font-size: 30px;
+    margin-top: 55px;
+}
+
+.card{
+    margin-left: 50px;
+}
+
+
+.package1{
+    margin-top: 10px;
+}
+
+.package2{
+    margin-top: 10px;
+}
+
+.package3{
+    margin-top: 10px;
+}
+
+.package4{
+    margin-top: 10px;
+}
+
+.tabbackground{
+    background-color: lightgray;
+    padding: 40px;
+}
+
+.tablayout{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.footer{
+    font-size: 19px;
+    color: white;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+
+.form{
+    background-color: black;
+    color: white;
+    margin-top: -290px;
+}
